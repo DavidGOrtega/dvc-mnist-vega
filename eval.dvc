@@ -4,11 +4,17 @@ outs:
   metric: true
   cache: false
   persist: false
+  md5: bbdd990eea3ce56ef517746e23346250
 - path: metrics/confusion_matrix.json
   metric: true
   cache: false
   persist: false
+  md5: 4a462a698ed0803f05a2a4742bacbeb4
 deps:
 - path: code/eval.py
+  md5: a6f140e5f1f186bfde64a3750e1ff978
 - path: data
+  md5: fbc7a9217c3fb46d97ca2854e65267d4.dir
 - path: models
+  md5: 597c8532150d1cd4d0cabbf78f3f4b2d.dir
+md5: 556895df1170d5d5fb998e521d299bf5
