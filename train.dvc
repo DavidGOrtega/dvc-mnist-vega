@@ -1,0 +1,17 @@
+cmd: python code/train.py
+outs:
+- path: models
+  metric: false
+  cache: true
+  persist: false
+- path: metrics/train.json
+  metric: true
+  cache: false
+  persist: false
+- path: metrics/history.json
+  metric: true
+  cache: false
+  persist: false
+deps:
+- path: code/train.py
+- path: data
