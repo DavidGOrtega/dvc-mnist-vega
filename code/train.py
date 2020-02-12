@@ -14,8 +14,8 @@ DATASET = Mnist.DataSet(train_images, train_labels)
 OUT = os.path.join(dirname, "../models/mnist")
 
 batch_size = 128
-num_steps = 2000
-learning_rate = 0.01
+num_steps = 1800
+learning_rate = 0.02
 start = time.time()
 
 # input
