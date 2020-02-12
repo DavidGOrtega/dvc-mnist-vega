@@ -4,20 +4,20 @@ outs:
   metric: false
   cache: true
   persist: false
-  md5: 017dde5a5a65fda698d7a3c11546112c.dir
+  md5: 776feadda2855c1d972c1e672583b1df.dir
 - path: metrics/train.json
   metric: true
   cache: false
   persist: false
-  md5: dc03b7836a7034835193c0df2e41fb8d
+  md5: 80443f2385414d434f097d1af596c74e
 - path: metrics/history.json
   metric: true
   cache: false
   persist: false
-  md5: 5c7bc14fa64fe9413e11691ca4ce8e46
+  md5: 93105e4769778534caf0ca2e807c2c3b
 deps:
 - path: code/train.py
-  md5: f4f6a4e477eb88e1261491b4318bedf3
+  md5: 3823f5b6211a4aa7d09e51234737e20c
 - path: data
   md5: fbc7a9217c3fb46d97ca2854e65267d4.dir
-md5: 9b86e2fb3f46904b0ef79d837a42985b
+md5: baa37ccc7ca1b329a5ff0d4526f17e8c
