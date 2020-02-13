@@ -11,6 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           git fetch --all
+          git checkout branch1
+          git checkout branch2
+          git checkout branch3
 
       - name: setup python 
         uses: actions/setup-python@v1
