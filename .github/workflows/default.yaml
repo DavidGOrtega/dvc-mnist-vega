@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          git pull --prune --unshallow --all
+          git pull --prune --unshallow
           
       - name: setup python 
         uses: actions/setup-python@v1
