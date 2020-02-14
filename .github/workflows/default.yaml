@@ -10,7 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          git fetch origin
+          git fetch --all
+          git checkout branch3
 
       - name: setup python 
         uses: actions/setup-python@v1
