@@ -1,2 +1,2 @@
 # dvc-mnist-vega
-v2
+v3
