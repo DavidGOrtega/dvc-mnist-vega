@@ -28,7 +28,7 @@ with tf.Session() as sess:
 
     pred = sess.run([softmax, accuracy], feed_dict=feed_dict)
     with open(os.path.join(dirname, '../metrics/eval.json'), 'w') as outfile:
-        json.dump({ "accuracy" : str(pred[1]) }, outfile)
+        json.dump({ "accuracy" : int(pred[1] * 10) }, outfile)
 
     tf_confusion_matrix = tf.confusion_matrix(labels=tf.argmax(LABELS, 1), predictions=tf.argmax(pred[0], 1), num_classes=10)
     tf_confusion_matrix = tf_confusion_matrix.eval()
