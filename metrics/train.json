@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"learning_rate": 0.01, "num_steps": 700, "batch_size": 128, "took": 0.0009803779125213622}
+=======
+{"batch_size": 128, "num_steps": 1100, "learning_rate": 0.01, "took": 0.0017964580059051513}
+>>>>>>> 0a48c02b331a82ce806c774da5275d78263d1bb5
