@@ -1,3 +1,6 @@
+import time 
+time.sleep(20)
+
 import os
 import json
 import tensorflow.compat.v1 as tf
