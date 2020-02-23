@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
 
       - name: setup python 
         uses: actions/setup-python@v1
@@ -19,11 +19,11 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - uses: DavidGOrtega/dvc-action@develop
+      - uses: DavidGOrtega/dvc-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          dvc_repro_file: eval.dvc
-          vega_templates: 'vega_history.json,vega_confusion_matrix.json,vega_scalars.json'
+          repro_targets: eval.dvc
+          metrics_diff_targets: 'metrics/eval.json,metrics/train.json'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
