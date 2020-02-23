@@ -12,7 +12,7 @@ jobs:
 
       - name: extra
         run: |
-          git tag
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
       - name: setup python 
         uses: actions/setup-python@v1
